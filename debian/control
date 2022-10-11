@@ -1,0 +1,28 @@
+Source: libstatistics-test-sequence-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libparams-util-perl,
+                     perl
+Standards-Version: 4.1.1
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libstatistics-test-sequence-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libstatistics-test-sequence-perl.git
+Homepage: https://metacpan.org/release/Statistics-Test-Sequence
+
+Package: libstatistics-test-sequence-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libparams-util-perl
+Suggests: libstatistics-test-randomwalk-perl
+Description: Perl module that tests correlation of random numbers
+ Statistics::Test::Sequence implements a sequence correlation test for random
+ number generators. It shows pairwise correlation between subsequent random
+ numbers.
+ .
+ It performs this analysis using an algorithm published in: Blobel, V., and
+ Lohrmann, E. Statistische und numerische Methoden der Datenanalyse. Stuttgart,
+ Leipzig: Teubner, 1998
